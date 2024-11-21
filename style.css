@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+h1, h2{
+    font-size: 2rem;
+    text-align:center;
+    text-transform: uppercase;
+}
+img{
+    height: 100%;
+}
+
+.titulo-principal{
+        background-color: #C8B8B8;
+        padding: 8rem 0;
+
+}
+
+#slider-box-first, #slider-box-second{
+    width: 45%;
+    height: auto;
+    margin:0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#slider-box-fourth,
+#slider-box-third{
+     width: 96%;
+    height: 450px;
+    margin: 0 auto 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#slider-box-third{
+    margin: 4rem auto 0;
+}
+
+
+#slider-box-first ul,#slider-box-second ul, #slider-box-fourth ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+        animation: slide 20s infinite alternate ease-in-out;
+
+}
+#slider-box-third ul{
+    display: flex;
+    gap: 5px;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+
+}
+#slider-box-first li, #slider-box-second li,#slider-box-fourth li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+#slider-box-third li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+#slider-box-first img, #slider-box-second img, #slider-box-fourth img{
+    width: 100%;
+}
+#slider-box-third img{
+    width: 100%;
+    
+}
+
+@keyframes slide{
+
+    0%{ margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+/*# primera galeria*/
+
+/*.galeria{
+ display: grid; 
+  grid-template-columns: 2.2fr 2.1fr 0.1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "slider-box-first slider-box-second ."
+    ". . ."
+    ". . ."; 
+}
+.slider-box-first { grid-area: slider-box-first; }
+.slider-box-second { grid-area: slider-box-second; }*/
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D5CBCB;
+    padding: 10rem 0;
+}
+
+.slider-box-third{
+    width: 100%;
+}
+
+
+
+.after-thirdbox{
+    text-align: justify;
+    margin: 1rem 2rem 0;
+}
+.cameraimg{
+    padding: 10rem 0;
+    text-align: center;
+    opacity: 90%;
+        background-color: #C8B8B8;
+
+}
+
+
+.galeria-2{
+    background-color: #B89B9B;
+    padding: 8rem 0;
+
+}
+
+
+
+
+.aboutMe{
+    padding: 10rem 0 10rem ;
+    text-align: center;
+    background-color: #7A8583;
+    color: white;
+    
+}
+
+.aboutM{
+    margin: 5rem 20rem 5rem;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.contacto{
+    display: flex;
+    padding: 10rem 0;
+    justify-content: center;
+    gap: 4rem;
+    background-color: #C8B8B8;
+}
+.icon{
+   
+    width: 50px;
+    height: 50px;
+}
+
